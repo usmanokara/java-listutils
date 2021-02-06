@@ -24,7 +24,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                                                             employee -> employee.age <= 26);
   ```
 </br>
-<img src="s1.png">
+
 
 ## 2) firstWhere()
   ```
@@ -34,7 +34,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                                                                                           "man"));
   ```
 </br>
-<img src="s2.JPG">
+
 
 ## 2) lastWhere()
   ```
@@ -44,7 +44,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                                                                                             "man"));
   ```
 </br>
-<img src="s3.JPG">
+
 
 ## 2) sum()
   ```
@@ -52,6 +52,5 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                           employee -> employee.age) / employeeList.size();
   ```
 </br>
-output is 24.5
 
 
