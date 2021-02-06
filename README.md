@@ -18,7 +18,7 @@ The whole idea is inspired by <br>Flutter</b>
 	```
 
     ```groovy
-  	        implementation 'com.github.usmanokara:java-listutils:1.0'
+  	        implementation 'com.github.usmanokara:java-listutils:1.1'
 
     ```
     
