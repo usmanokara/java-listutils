@@ -18,5 +18,10 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
         employeeList.add(new Employee(7, "Ali", 10, "Australlia"));</br>
   ```
   
-  ## 1) Find
+  ## 1) findWhere()
+  ```
+  List<Employee> employeesListWithAgeLessThan26 = ListUtils.findWhere(employeeList,
+                                                                            employee -> employee.age <= 26);
+  ```
+</br>
 <img src="s1.png">
