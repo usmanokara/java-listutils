@@ -4,6 +4,9 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 ## Let start with some code
+</br>
+</br>
+So this EMployee list we will aply different list function to filter data
 ```
         List<Employee> employeeList = new ArrayList<>();</br>
         employeeList.add(new Employee(1, "Usman", 25, "Lahore pakistan"));</br>
@@ -14,4 +17,5 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
         employeeList.add(new Employee(6, "Naeem", 50, "Canada"));</br>
         employeeList.add(new Employee(7, "Ali", 10, "Australlia"));</br>
   ```
+  
 <img src="s1.png">
