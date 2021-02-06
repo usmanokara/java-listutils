@@ -1,2 +1,2 @@
 # java-listutils
-<img src="s2.JPG">
+<img src="s1.JPG">
