@@ -34,4 +34,4 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                                                                                           "man"));
   ```
 </br>
-<img src="s2.png">
+<img src="s2.JPG">
