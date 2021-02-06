@@ -74,4 +74,24 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   ```
 </br>
 
+## 7) mapToObject()
+  ```
+   List<Object> addressListObject = ListUtils.mapToObject(employeeList,
+                                                               employee -> employee.address);
+  ```
+</br>
 
+
+## 8) mapToType()
+  ```
+  List<String> ageListString = ListUtils.mapToType(employeeList,
+                                                         employee -> employee.age + " years old");
+  ```
+</br>
+
+## 8) removeWhere()
+  ```
+   List<Employee> newEmployeeListWithItemRemoved = ListUtils.removeWhere(employeeList,
+                                                                              employee -> employee.age > 30);
+  ```
+</br>
