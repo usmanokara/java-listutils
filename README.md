@@ -33,8 +33,16 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
         employeeList.add(new Employee(7, "Ali", 10, "Australlia"));</br>
   ```
   
+ ## 1) forEach()
+  ```
+ ListUtils.forEach(employeeList, (employee, index) -> {
+            Log.d("employee", employee.toString() + " at " + index);
+        });
+  ```
+</br>
+
   
-  ## 1) findWhere()
+  ## 2) findWhere()
   ```
   List<Employee> employeesListWithAgeLessThan26 = ListUtils.findWhere(employeeList,
                                                                             employee -> employee.age <= 26);
@@ -42,7 +50,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 2) firstWhere()
+## 3) firstWhere()
   ```
   Employee singleEmployeeHavingManInNameTop = ListUtils.firstWhere(employeeList,
                                                                          employee -> employee.name.toLowerCase()
@@ -52,7 +60,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 3) lastWhere()
+## 4) lastWhere()
   ```
  Employee singleEmployeeHavingManInNameBottom = ListUtils.lastWhere(employeeList,
                                                                            employee -> employee.name.toLowerCase()
@@ -62,7 +70,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 4) sum()
+## 5) sum()
   ```
   double averageAge = ListUtils.sum(employeeList,
                                           employee -> employee.age) / employeeList.size();
@@ -70,7 +78,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 5) sumWhere()
+## 6) sumWhere()
   ```
   int peopleHavingIdGreaterThan6 = ListUtils.findWhere(employeeList,
                                                              employee -> employee.id > 6)
@@ -83,14 +91,14 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 
 
 
-## 6) indexWhere()
+## 7) indexWhere()
   ```
   int indexOfItemHavingAge33 = ListUtils.indexWhere(employeeList,
                                                           employee -> employee.age == 33);
   ```
 </br>
 
-## 7) mapToObject()
+## 8) mapToObject()
   ```
    List<Object> addressListObject = ListUtils.mapToObject(employeeList,
                                                                employee -> employee.address);
@@ -98,14 +106,14 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 8) mapToType()
+## 9) mapToType()
   ```
   List<String> ageListString = ListUtils.mapToType(employeeList,
                                                          employee -> employee.age + " years old");
   ```
 </br>
 
-## 9) removeWhere()
+## 10) removeWhere()
   ```
    List<Employee> newEmployeeListWithItemRemoved = ListUtils.removeWhere(employeeList,
                                                                               employee -> employee.age > 30);
