@@ -24,7 +24,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
                                                                             employee -> employee.age <= 26);
   ```
 </br>
-<img src="s1.png" height="50px">
+<img src="s1.png">
 
 ## 2) firstWhere()
   ```
