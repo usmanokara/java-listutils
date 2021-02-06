@@ -4,7 +4,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 ## Let start with some code
-<code>
+```
         List<Employee> employeeList = new ArrayList<>();</br>
         employeeList.add(new Employee(1, "Usman", 25, "Lahore pakistan"));</br>
         employeeList.add(new Employee(2, "Rehman", 17, "Okara pakistan"));</br>
@@ -13,5 +13,5 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
         employeeList.add(new Employee(5, "Nouman naseer", 33, "America"));</br>
         employeeList.add(new Employee(6, "Naeem", 50, "Canada"));</br>
         employeeList.add(new Employee(7, "Ali", 10, "Australlia"));</br>
-  </code>
+  ```
 <img src="s1.png">
