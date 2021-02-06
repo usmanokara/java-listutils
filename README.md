@@ -1,8 +1,10 @@
 
 # Java-ListUtils
-List <> in different langauges are evolving.New langauges are prviding more powerfull feratures to filter date from the list.
-e.g findformlist, delete from list, etc. Java provide list functionality in the form of Streams but that required minimum API level <b>24</b> https://developer.android.com/reference/java/util/stream/Stream. so I decided to create list utils that can make your code clean and understandable. This will supprt api level <b>21</b> and <b>ownward</b> </br></br>
-The whole idea is inspired from <b>Flutter</b>
+List <> in different languages are evolving. New languages are providing more powerful features to filter data from the list. e.g find for the list, delete from the list, etc. Java provides list functionality in the form of Streams but that required minimum API level 24 https://developer.android.com/reference/java/util/stream/Stream. so I decided to create a list of utils that can make your code clean and understandable. This will support API level 21 and onward
+
+
+
+The whole idea is inspired by #Flutter
 </br>
 1. Gradle dependency:
 
