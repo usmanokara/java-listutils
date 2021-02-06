@@ -1,6 +1,7 @@
 package com.java.list;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,15 +43,13 @@ public class MainActivity
                                                                            employee -> employee.name.toLowerCase()
                                                                                                     .contains(
                                                                                                             "man"));
-        double averageAge = ListUtils.sum(employeeList,
-                                          employee -> employee.age) / employeeList.size();
 
-        int peopleHavingIdGeaterThan6 = ListUtils.findWhere(employeeList,
-                                                            employee -> employee.id > 6)
-                                                 .size();
+        int peopleHavingIdGreaterThan6 = ListUtils.findWhere(employeeList,
+                                                             employee -> employee.id > 6)
+                                                  .size();
         double averageAgeOfPeopleHavingIdGreaterThan6 = ListUtils.sumWhere(employeeList,
                                                                            employee -> employee.id > 6,
-                                                                           employee -> employee.age) / peopleHavingIdGeaterThan6;
+                                                                           employee -> employee.age) / peopleHavingIdGreaterThan6;
 
         int indexOfItemHavingAge33 = ListUtils.indexWhere(employeeList,
                                                           employee -> employee.age == 33);
@@ -60,11 +59,15 @@ public class MainActivity
                                                                employee -> employee.address);
 
         List<String> ageListString = ListUtils.mapToType(employeeList,
-                                                             employee -> employee.age + " years old");
+                                                         employee -> employee.age + " years old");
 
 
         List<Employee> newEmployeeListWithItemRemoved = ListUtils.removeWhere(employeeList,
                                                                               employee -> employee.age > 30);
+
+        ListUtils.forEach(employeeList, (employee, index) -> {
+            Log.d("employee", employee.toString() + " at " + index);
+        });
 
     }
 

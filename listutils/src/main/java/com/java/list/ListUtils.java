@@ -74,7 +74,7 @@ public class ListUtils
         List<T> tempList = new ArrayList<>();
         for (T item : list)
         {
-            tempList.add(0,item);
+            tempList.add(0, item);
         }
         for (T item : tempList)
         {
@@ -238,6 +238,21 @@ public class ListUtils
             }
         }
         return tempList;
+    }
+
+    //*********************************************************************
+    public static <T> void forEach(List<T> list, ForEachInterface<T> listInterface)
+    //*********************************************************************
+    {
+        int index = 0;
+        for (T item : list)
+        {
+            if (listInterface != null)
+            {
+                listInterface.loop(item, index);
+                index++;
+            }
+        }
     }
 
 }
