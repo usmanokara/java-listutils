@@ -59,11 +59,19 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   int peopleHavingIdGreaterThan6 = ListUtils.findWhere(employeeList,
                                                              employee -> employee.id > 6)
                                                   .size();
-        double averageAgeOfPeopleHavingIdGreaterThan6 = ListUtils.sumWhere(employeeList,
+ double averageAgeOfPeopleHavingIdGreaterThan6 = ListUtils.sumWhere(employeeList,
                                                                            employee -> employee.id > 6,
                                                                            employee -> employee.age) / peopleHavingIdGreaterThan6
   ```
 </br>
 
+
+
+## 6) indexWhere()
+  ```
+  int indexOfItemHavingAge33 = ListUtils.indexWhere(employeeList,
+                                                          employee -> employee.age == 33);
+  ```
+</br>
 
 
