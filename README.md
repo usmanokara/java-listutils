@@ -1,5 +1,3 @@
-[![Releases](https://img.shields.io/github/release/dhaval2404/imagePicker/all.svg?style=flat-square)](https://github.com/usmanokara/java-listutils/)
-
 
 # java-listutils
 List <> in different langaugea are evolving.New langauges are prviding more powerfull feratures to filter date from the list.
@@ -17,7 +15,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 	```
 
     ```groovy
-  	        implementation 'com.github.usmanokara:java-listutils:Tag'
+  	        implementation 'com.github.usmanokara:java-listutils:1.0'
 
     ```
     
