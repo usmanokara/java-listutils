@@ -25,3 +25,13 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   ```
 </br>
 <img src="s1.png">
+
+## 2) findWhere()
+  ```
+  Employee singleEmployeeHavingManInNameTop = ListUtils.firstWhere(employeeList,
+                                                                         employee -> employee.name.toLowerCase()
+                                                                                                  .contains(
+                                                                                                          "man"));
+  ```
+</br>
+<img src="s2.png">
