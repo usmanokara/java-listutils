@@ -2,7 +2,21 @@
 List <> in different langaugea are evolving.New langauges are prviding more powerfull feratures to filter date from the list.
 e.g findformlist, delete from list, etc. Java provide list functionality in the form of Streams but that required minimum API level <b>24</b> https://developer.android.com/reference/java/util/stream/Stream. so I decided to create list utils that can make your code clean and understandable. This will supprt api level <b>21</b> and <b>ownward</b> The whole idea is inspired from <b>Flutter</b>
 </br>
+1. Gradle dependency:
 
+	```groovy
+	allprojects {
+	   repositories {
+	      	jcenter()
+           	maven { url "https://jitpack.io" }  //Make sure to add this in your project for uCrop
+	   }
+	}
+	```
+
+    ```groovy
+   implementation 'com.github.dhaval2404:imagepicker:1.8'
+    ```
+    
 ## Let start with some code
 
 ## So this Employee list we will aply different list function to filter data
@@ -17,6 +31,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
         employeeList.add(new Employee(6, "Naeem", 50, "Canada"));</br>
         employeeList.add(new Employee(7, "Ali", 10, "Australlia"));</br>
   ```
+  
   
   ## 1) findWhere()
   ```
