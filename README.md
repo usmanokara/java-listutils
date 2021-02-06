@@ -45,3 +45,13 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   ```
 </br>
 <img src="s3.JPG">
+
+## 2) sum()
+  ```
+  double averageAge = ListUtils.sum(employeeList,
+                                          employee -> employee.age) / employeeList.size();
+  ```
+</br>
+output is 24.5
+
+
