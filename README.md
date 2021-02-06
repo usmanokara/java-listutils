@@ -105,7 +105,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   ```
 </br>
 
-## 8) removeWhere()
+## 9) removeWhere()
   ```
    List<Employee> newEmployeeListWithItemRemoved = ListUtils.removeWhere(employeeList,
                                                                               employee -> employee.age > 30);
