@@ -26,7 +26,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 <img src="s1.png">
 
-## 2) findWhere()
+## 2) firstWhere()
   ```
   Employee singleEmployeeHavingManInNameTop = ListUtils.firstWhere(employeeList,
                                                                          employee -> employee.name.toLowerCase()
@@ -35,3 +35,13 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
   ```
 </br>
 <img src="s2.JPG">
+
+## 2) lastWhere()
+  ```
+ Employee singleEmployeeHavingManInNameBottom = ListUtils.lastWhere(employeeList,
+                                                                           employee -> employee.name.toLowerCase()
+                                                                                                    .contains(
+                                                                                                            "man"));
+  ```
+</br>
+<img src="s3.JPG">
