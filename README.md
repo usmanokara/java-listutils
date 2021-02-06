@@ -5,7 +5,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 
 ## Let start with some code
 
-## So this EMployee list we will aply different list function to filter data
+## So this Employee list we will aply different list function to filter data
 
 ```
         List<Employee> employeeList = new ArrayList<>();</br>
