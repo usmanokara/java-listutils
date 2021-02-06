@@ -36,7 +36,7 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 2) lastWhere()
+## 3) lastWhere()
   ```
  Employee singleEmployeeHavingManInNameBottom = ListUtils.lastWhere(employeeList,
                                                                            employee -> employee.name.toLowerCase()
@@ -46,11 +46,24 @@ e.g findformlist, delete from list, etc. Java provide list functionality in the 
 </br>
 
 
-## 2) sum()
+## 4) sum()
   ```
   double averageAge = ListUtils.sum(employeeList,
                                           employee -> employee.age) / employeeList.size();
   ```
 </br>
+
+
+## 5) sumWhere()
+  ```
+  int peopleHavingIdGreaterThan6 = ListUtils.findWhere(employeeList,
+                                                             employee -> employee.id > 6)
+                                                  .size();
+        double averageAgeOfPeopleHavingIdGreaterThan6 = ListUtils.sumWhere(employeeList,
+                                                                           employee -> employee.id > 6,
+                                                                           employee -> employee.age) / peopleHavingIdGreaterThan6
+  ```
+</br>
+
 
 
