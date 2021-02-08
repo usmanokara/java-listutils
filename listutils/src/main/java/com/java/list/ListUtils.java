@@ -255,6 +255,22 @@ public class ListUtils
         }
     }
 
+
+    //*********************************************************************
+    public static <T> void updateWhere(List<T> list, T updatedObject, ListInterface<T> listInterface)
+    //*********************************************************************
+    {
+        int index = 0;
+        for (T item : list)
+        {
+            if (listInterface != null && listInterface.filter(item))
+            {
+                list.set(index, updatedObject);
+            }
+            index++;
+        }
+    }
+
 }
 
 

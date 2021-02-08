@@ -66,8 +66,14 @@ public class MainActivity
                                                                               employee -> employee.age > 30);
 
         ListUtils.forEach(employeeList, (employee, index) -> {
+
             Log.d("employee", employee.toString() + " at " + index);
         });
+
+        Employee updatedEmployee = new Employee(1, "usman naeem", 10, "ab adress");
+
+        ListUtils.updateWhere(employeeList, updatedEmployee,
+                              employee -> employee.id == updatedEmployee.id);
 
     }
 
